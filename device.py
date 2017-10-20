@@ -1,10 +1,16 @@
 #
 # device.py
 #
-# Defines a basic class for representing a device in a power management sim
+# Defines basic classes for representing a device in a power management sim
 #
 #==========================================================================
-
+# Class device:
+# 
+# A base class for representing a device in a power management simulation.
+# The basic device has a name and can be on or off. It defaults to off when 
+# the object is created. The device has two power values defined. One for when
+# it is on and one for ghost power while it is off. The pwr method returns
+# the instantaneous power the device is using.
 
 class device:
     
