@@ -12,7 +12,7 @@ $./setup.py
 
 This script will generate a Constants.py and SimUtils.py file based off of device.xml. 
 
-### Device.xml
+## Device.xml
 
 This xml file allows the user to simplify the process of adding a new type of device to the simulated environment.
 Example of adding a device is shown below:
@@ -33,13 +33,11 @@ For the current implementation we use the following fields:
 
 * name - The name of the device
 * p_on - The amount of power consumed by the device when on
-    * p_off - The amount of power consumbed by the device when off
-    * (phantom power)
+* p_off - The amount of power consumbed by the device when off (phantom power)
 * start_on - The initial state of the device (True/False)
-    * cyclic - If the device is cyclic (True/False)    *Note*:
-    * Currently don't support this
+* cyclic - If the device is cyclic (True/False)    *Note*: Currently don't support this
 
-### Constants.py
+## Constants.py
 
 The Constants.py file contains a list of constants (surprise) that could be useful when testing our simulated
 environment. In the setup script, you can specify fields from device.xml you want generated as constants. In the below
@@ -66,7 +64,7 @@ index, the user can simply use the constant to specify what device to use in tes
 sim.dev_list[FRIDGE_INDEX]
 ```
 
-### SimUtil.py
+## SimUtil.py
 
 Currently, SimUtil is an auto-generated file used to include helper methods for the simulation. Currently, it only contains a function for populating the device list for the simulation class based on the device.xml file:
 
