@@ -61,7 +61,7 @@ FRIDGE_START_ON =         True
 index, the user can simply use the constant to specify what device to use in test cases. 
 
 ```python
-sim.dev_list[FRIDGE_INDEX]
+sim.dev_list[Constants.FRIDGE_INDEX]
 ```
 
 ## SimUtil.py
